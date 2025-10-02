@@ -1,0 +1,134 @@
+@import "colors.css";
+
+#urlbar:active {
+        width: 300px !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        align-content: center !important;
+}
+
+.urlbarView-favicon {
+        filter: grayscale(100%) !important;
+}
+
+::selection {
+        color: var(--red);
+}
+
+#urlbar-input {
+        color: var(--pink) !important;
+}
+
+#urlbar #urlbar-background {
+        background-color: var(--crust) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+}
+
+#urlbar[open="true"] #urlbar-background {
+        background-color: var(--crust) !important;
+}
+
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"]):hover,
+.urlbarView.megabar
+        .urlbarView-row:not([type="tip"]):hover
+        > .urlbarView-row-inner {
+        background: none !important;
+}
+
+.urlbarView #urlbar-results .urlbarView-row .urlbarView-row-inner:hover {
+        color: var(--red) !important;
+        background-color: var(--crust) !important;
+}
+
+.urlbarView
+        #urlbar-results
+        .urlbarView-row[aria-selected="true"]
+        .urlbarView-row-inner {
+        border: 0;
+        background-color: var(--pink) !important;
+        color: var(--pink) !important;
+}
+
+.urlbarView {
+        color: var(--pink) !important;
+        background-color: var(--crust) !important;
+        top: inherit;
+        left: 0 !important;
+        border-width: 0;
+        border-radius: 0;
+}
+
+.urlbarView.megabar .urlbarView-body-inner {
+        border: 0 !important;
+}
+
+.urlbarView #urlbar-results {
+        color: var(--surface2) !important;
+}
+
+.urlbarView #urlbar-results .urlbarView-row .urlbarView-url {
+        color: var(--surface1) !important;
+}
+
+#urlbar-container box,
+#urlbar-container image,
+.urlbar-icon-wrapper {
+        background-color: transparent !important;
+        border: none !important;
+}
+
+#urlbar-input-container:focus {
+        background-color: var(--crust) !important;
+        box-shadow: none !important;
+        border: none !important;
+}
+
+#urlbar-container [class*="icon"],
+#urlbar-container [id*="icon"] {
+        border: none !important;
+        fill: var(--red) !important;
+        fill-opacity: 1 !important;
+        transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+#urlbar-container [class*="icon"]:hover,
+#urlbar-container [id*="icon"]:hover,
+#urlbar-container [open="true"] [class*="icon"],
+#urlbar-container [open="true"] [id*="icon"],
+#urlbar-container [class*="icon"][open="true"],
+#urlbar-container [id*="icon"][open="true"] {
+        fill: var(--red) !important;
+        fill-opacity: 1 !important;
+        border: none !important;
+}
+
+#urlbar-zoom-button {
+        border-color: var(--crust) !important;
+        border-width: 0 !important;
+        background-color: var(--crust) !important;
+        color: var(--text) !important;
+        transition:
+                background-color,
+                border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+#urlbar-zoom-button:hover {
+        background-color: var(--crust) !important;
+        border-color: var(--crust) !important;
+}
+
+.searchmode-switcher,
+#scrollbutton-down,
+#scrollbutton-up,
+#reader-mode-button,
+#downloads-button,
+#star-button-box,
+#tracking-protection-icon-container,
+#picture-in-picture-button,
+#identity-permission-box,
+#identity-icon-box,
+#pageActionSeparator {
+        display: none !important;
+}

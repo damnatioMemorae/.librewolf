@@ -1,0 +1,57 @@
+:root {
+        --toolbarbutton-border-radius: 0 !important ;
+}
+.urlbar-input-container > box:hover,
+.urlbar-input-container > box[open],
+#main-menubar > menu,
+.titlebar-button:hover,
+#scrollbutton-up,
+#scrollbutton-down,
+.tab-close-button,
+.close-icon > image,
+#page-action-buttons > :hover,
+.panel-arrowcontent,
+.urlbarView-row-inner,
+.search-one-offs button,
+.subviewbutton-back,
+.toolbaritem-combined-buttons > toolbarbutton,
+#PopupSearchAutoComplete,
+menupopup {
+        border-radius: 0;
+}
+
+button,
+.tab-background {
+        border-radius: 0 !important;
+}
+
+.panel-arrowcontent {
+        margin-inline-end: 0 !important;
+}
+.panel-arrow {
+        margin-inline: 0 !important;
+}
+
+menupopup {
+        -moz-appearance: none !important;
+        overflow: clip !important;
+}
+
+.tabbrowser-tab[selected]::after,
+.tabbrowser-tab[beforeselected-visible]::after {
+        border-color: transparent !important;
+}
+
+.urlbar-icon,
+toolbar
+        toolbarbutton:not(#back-button):not(.bookmark-item):not(
+                .titlebar-button
+        )
+        > .toolbarbutton-icon {
+        border-radius: 0 !important;
+        clip-path: circle();
+}
+
+menugroup:hover > menuitem {
+        clip-path: circle();
+}

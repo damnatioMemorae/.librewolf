@@ -1,0 +1,84 @@
+@import "colors.css";
+
+.tab-content {
+        color: var(--surface1) !important;
+        padding-bottom: 0 !important;
+}
+
+.tab-content[selected] {
+        color: var(--pink) !important;
+        padding-bottom: 0 !important;
+}
+
+.tab-icon-image {
+        filter: grayscale(100%) !important;
+}
+
+.tabbrowser-tab {
+        color: var(--crust) !important;
+        transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab .tab-background {
+        border: none !important;
+        box-shadow: none !important;
+        transition:
+                background-color,
+                border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab .tab-stack {
+        color: var(--text) !important;
+        background: var(--crust) !important;
+        border: 0 !important;
+        margin: 0 0 0 0 !important;
+        transition:
+                background-color,
+                border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab .tab-background {
+        border: none !important;
+        transition:
+                background-color,
+                border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.tabbrowser-tab:hover .tab-stack {
+        color: var(--green) !important;
+        border-color: none !important;
+}
+
+.tabbrowser-tab:hover .tab-background {
+        background: var(--crust) !important;
+}
+
+.tabbrowser-tab[selected] .tab-stack {
+        border-color: var(--crust) !important;
+        color: var(--green) !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+        color: var(--text);
+        background: var(--crust) !important;
+}
+
+/* .tabbrowser-tab .tab-text { */
+/*         opacity: 1 !important; */
+/* } */
+
+.tabbrowser-tab:hover {
+        /* display: none !important; */
+        color: var(--red) !important;
+        /* background: transparent !important; */
+}
+
+.tabbrowser-tab::after,
+.titlebar-button,
+.tab-background,
+.tab-line,
+.close-icon,
+#tabs-newtab-button,
+#alltabs-button {
+        display: none !important;
+}

@@ -1,0 +1,61 @@
+:root {
+        --ivory: #dce0e8;
+        --spark: #add8e6;
+        --rosewater: #f5e0dc;
+        --lamingo: #f2cdcd;
+        --pink: #f5c2e7;
+        --mauve: #cba6f7;
+        --red: #f38ba8;
+        --maroon: #eba0ac;
+        --peach: #fab387;
+        --yellow: #f9e2af;
+        --green: #a6e3a1;
+        --teal: #94e2d5;
+        --sky: #89dceb;
+        --sapphire: #74c7ec;
+        --blue: #89b4fa;
+        --lavender: #b4befe;
+        --text: #cdd6f4;
+        --subtext1: #bac2de;
+        --subtext0: #a6adc8;
+        --overlay2: #9399b2;
+        --overlay1: #7f849c;
+        --overlay0: #6c7086;
+        --surface2: #585b70;
+        --surface1: #45475a;
+        --surface0: #313244;
+        --base: #1e1e2e;
+        --mantle: #14141f;
+        --crust: #0e0e16;
+
+        /* Popup panels */
+        --arrowpanel-background: var(--mantle) !important;
+        --arrowpanel-border-color: var(--mantle) !important;
+        --arrowpanel-border-radius: 0 !important;
+        --arrowpanel-color: var(--text) !important;
+        --arrowpanel-dimmed: var(--mantle) !important;
+        /* window and toolbar background */
+        --lwt-accent-color: var(--crust) !important;
+        --lwt-accent-color-inactive: var(--crust) !important;
+        --toolbar-bgcolor: var(--crust) !important;
+        /* urlbar */
+        --urlbarView-highlight-color: var(--red) !important;
+        --urlbarView-highlight-background: var(--crust) !important;
+        --toolbar-field-border-color: none !important;
+        --toolbar-field-focus-border-color: none !important;
+        --urlbar-popup-url-color: var(--red) !important;
+        /* urlbar Firefox < 92 */
+        --lwt-toolbar-field-background-color: var(--crust) !important;
+        --lwt-toolbar-field-focus: var(--crust) !important;
+        --lwt-toolbar-field-color: red !important;
+        --lwt-toolbar-field-focus-color: var(--red) !important;
+        /* urlbar Firefox 92+ */
+        --toolbar-field-background-color: var(--crust) !important;
+        --toolbar-field-focus-background-color: var(--crust) !important;
+        --toolbar-field-color: var(--red) !important;
+        --toolbar-field-focus-color: none !important;
+        /* buttons */
+        --button-border-radius: 0 !important;
+
+        --scrollbar-chrome-size: 12px;
+}

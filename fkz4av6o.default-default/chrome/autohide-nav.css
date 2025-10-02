@@ -1,0 +1,85 @@
+@import "colors.css";
+
+:is(#back-button, #forward-button),
+#reload-button {
+        background-color: var(--crust) !important;
+        margin-inline-start: -34px !important;
+        visibility: hidden;
+        transition: margin 66ms linear !important;
+        border-radius: none !important;
+}
+
+:is(#back-button, #forward-button):hover,
+:is(#back-button, #forward-button):hover
+        ~ :is(#back-button, #stop-reload-button, #forward-button),
+:is(#back-button, #forward-button):hover ~ #stop-reload-button > #reload-button,
+#urlbar-container + toolbarspring:hover ~ :is(#back-button, #forward-button),
+#stop-reload-button:hover > #reload-button,
+#urlbar-container + toolbarspring:hover ~ #stop-reload-button > #reload-button {
+        margin-inline-start: 0 !important;
+        visibility: visible;
+}
+
+#nav-bar-customization-target > #downloads-button {
+        margin-inline-start: 0 !important;
+        visibility: visible !important;
+}
+
+:is(#back-button, #forward-button)[disabled],
+#stop-reload-button > [disabled] {
+        display: none;
+}
+
+#urlbar-container + toolbarspring {
+        max-width: 4px !important;
+        min-width: 4px !important;
+}
+
+@keyframes statusline-anim {
+        from {
+                background-position-x: left;
+        }
+        to {
+                background-position-x: right;
+        }
+}
+#statuspanel[type="status"]::after {
+        position: fixed;
+        display: block;
+        height: 2px;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        content: "";
+        pointer-events: none;
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(
+                to left,
+                transparent,
+                var(--red) transparent
+        );
+        animation: statusline-anim 400ms alternate infinite ease-in-out;
+}
+
+@media (min-width: 1000px) {
+        #statuspanel[type="status"]::after {
+                animation-duration: 460ms;
+        }
+}
+@media (min-width: 1400px) {
+        #statuspanel[type="status"]::after {
+                animation-duration: 520ms;
+        }
+}
+@media (min-width: 1700px) {
+        #statuspanel[type="status"]::after {
+                background-size: 15%;
+                animation-duration: 550ms;
+        }
+}
+@media (min-width: 2200px) {
+        #statuspanel[type="status"]::after {
+                animation-duration: 600ms;
+        }
+}
