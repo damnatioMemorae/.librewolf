@@ -4,6 +4,7 @@
         border: none !important;
         background-color: var(--crust) !important;
         box-shadow: none !important;
+        /* width: 800px !important; */
 }
 
 #navigator-toolbox {

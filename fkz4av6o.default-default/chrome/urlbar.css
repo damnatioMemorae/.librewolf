@@ -1,7 +1,8 @@
 @import "colors.css";
 
 #urlbar:active {
-        width: 300px !important;
+        /* width: 300px !important; */
+        border: none !important;
         box-shadow: none !important;
         border-radius: 0 !important;
         align-content: center !important;
